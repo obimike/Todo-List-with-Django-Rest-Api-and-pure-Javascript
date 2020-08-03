@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Todo List</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css" />
+  <link href="css/tox-progress.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+  <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+
+  <header class="todo-header">
+    <h1 class="todo-title">My Todo-List</h1>
+    <form>
+      <div class="input-group mb-3">
+        <input type="text" class="form-control btn-lg todo-input" placeholder="Add ToDo Item" />
+        <div class="input-group-append">
+          <button type="button" class="btn btn-info add-todo"><i class="fa fa-plus-circle"
+              aria-hidden="true"></i></button>
+        </div>
+      </div>
+    </form>
+  </header>
+  <div class="api_error"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h2 class="todo-h2">Todo Lists</h2>
+        <hr />
+        <div class="filter-btns">
+          <button type="button" class="btn btn-outline-primary all-btn">All</button>
+          <button type="button" class="btn btn-outline-primary completed-btn ">Completed</button>
+          <button type="button" class="btn btn-outline-primary uncompleted-btn">Uncompleted</button>
+        </div>
+        <div class="todo-items">
+
+        </div>
+
+      </div>
+      <div class="col">
+        <h2 class="todo-h2" style="text-align: center;">Graphical Stat</h2>
+        <hr />
+        <div class="col-md-25 col-sm-50 ">
+          <div style="margin: auto;" class="tox-progress" data-size="180" data-thickness="15" data-color="#229922"
+            data-background="#ffffff" data-progress="0" data-speed="500">
+            <div class="tox-progress-content" data-vcenter="true">
+            </div>
+          </div>
+        </div>
+        <h1 class="text-center" style="margin: 10px;"></h1>
+
+        <!-- Demo info-->
+        <div class="row text-center mt-4">
+          <div class="col-6 border-right">
+            <div class="h4 font-weight-bold mb-0 total-todo">0</div><span class="small text-gray">Total Todo</span>
+          </div>
+          <div class="col-6">
+            <div class="h4 font-weight-bold mb-0 uncompleted-todo">0</div><span class="small text-gray">Uncompleted
+              Todo</span>
+          </div>
+        </div>
+        <!-- END -->
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <script type="text/javascript" src="dist/tox-progress.js"></script>
+  <script src="./app.js"></script>
+
+</body>
+
+</html>

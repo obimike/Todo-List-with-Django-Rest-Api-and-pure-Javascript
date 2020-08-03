@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #ef7bfe;
+  background: -webkit-linear-gradient(to right, #5fc4ff, #ef7bfe);
+  background: linear-gradient(to right, #5fc4ff, #ef7bfe);
+  min-height: 100vh;
+  font-family: "Oswald", sans-serif;
+  margin: 3em;
+}
+
+.container {
+  background-color: whitesmoke;
+  padding: 10px;
+  margin: 0 auto;
+  border-radius: 0.5rem;
+}
+
+.todo-header {
+  margin: 0 auto;
+  width: 20rem;
+}
+
+.add-todo {
+  cursor: pointer;
+}
+
+.filter-btns {
+  display: flex;
+}
+
+.all-btn,
+.completed-btn,
+.uncompleted-btn {
+  border-color: teal;
+  color: teal;
+  margin: 5px auto;
+  width: 0px auto;
+}
+
+.all-btn:hover,
+.completed-btn:hover,
+.uncompleted-btn:hover {
+  background-color: teal;
+  border-color: teal;
+  color: white;
+}
+
+.selected_btn {
+  background-color: teal;
+  border-color: teal;
+  color: white;
+}
+
+.add-todo,
+i {
+  font-size: 1.2rem;
+}
+
+.todo-title,
+.todo-h2 {
+  text-align: center;
+}
+
+.todo-h2 {
+  color: teal;
+}
+
+.todoCollection {
+  margin: 0.5rem;
+  padding: 0.2rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  border-color: teal;
+  border: 1px solid teal;
+  display: flex;
+}
+
+.todo-check,
+.todo-delete {
+  cursor: pointer;
+  align-self: center;
+}
+
+.todo-delete {
+  color: red;
+  flex: right;
+  text-decoration: none;
+}
+
+.todo-string {
+  margin-left: 5px;
+  margin-right: 5px;
+  flex: 1;
+}
+
+.fadeout {
+  opacity: 0;
+  transition: visibility 0s 1s, opacity 1s linear;
+}
+
+.fadein {
+  opacity: 1;
+  transition: opacity 2s linear;
+}
+
+.strike {
+  text-decoration: line-through;
+}
+
+.completed {
+  background-color: #5fc4ff;
+  opacity: 0.5;
+}
+
+.sever_error {
+  font-size: 18px;
+  text-align: center;
+  margin: 20px;
+}
+
+.sever_error span {
+  color: teal;
+  font-size: 14px;
+  text-align: center;
+  margin: 20px;
+}
+
+.sever_error img {
+  background-color: #ef7bfe;
+  border-radius: 50%;
+  width: 120px;
+  height: auto;
+  margin: 20px;
+}
+
+.api_error {
+  background-color: whitesmoke;
+  padding: 10px;
+  margin: 0 auto;
+  border-radius: 0.5rem;
+}
+
+.loading {
+  display: block;
+  margin: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 120px;
+  height: auto;
+}
