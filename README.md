@@ -17,3 +17,9 @@ Screenshots:
 Built With
 ===
 <a href="https://www.django-rest-framework.org/">Django REST framework</a> - The web framework used
+<br>
+<a href="https://github.com/FreekMencke/tox-progress">tox-progress</a> - Pie chart for animated radial progress bars
+<br>
+Regular Web Languages: HTML, CSS and JAVASCRIPT
+<br>
+
